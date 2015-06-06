@@ -24,22 +24,22 @@ To meet requirements above we can use a system of one-time passwords.
 
 1. User opens a webapp where he/she can login using stellar-wallet login data.
 1. stellar-wallet returns encrypted keychain data to a webapp.
-1. Webapp decrypts keychain data.
+1. Webap decrypts keychain data in user's browser.
 1. 20 random keys are generated.
 1. Keychain data is encrypted by each of random keys. After encrypting keychain data, each key is SHA-256 hashed and half of a hash and encrypted data is sent to a server.
 1. User can print encryption keys which are one-time passwords.
 
-It this demo we simply use a sender phone number as a method of authentication. In a production version users probably should be allowed to opt-out from one-time passwords solution.
+It this demo we simply use a sender phone number as a method of authentication. In a production version users probably should be allowed to opt-out from one-time passwords solution or allow users to use 2 wallets: one for every day spendings (does not require passwords), another with live-savings (one-time passwords required).
 
 ### Sending a transaction
 
 1. Users sends SMS with a transaction recipient (this can be address or federation name) and amount to be sent.
-1. User receives an SMS with transaction summary.
+1. User receives SMS with transaction summary.
 1. If everything is correct user needs to send one of one-time passwords (or a specific one, ex. 3rd.) to confirm a transaction.
 1. Server calculates a SHA-256 hash and finds encrypted data in a database. Then decrypts keychain data, signs and submits a transaction. Used one-time password is removed from a database.
 1. Server sends SMS message to a user with confirmation.
 
-It this demo we simply use a sender phone number as a method of authentication.
+It this demo we simply use a sender phone number as a method of authentication. Transactions are sent right away.
 
 ## Testing using Heroku and Twilio
 
