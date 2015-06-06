@@ -1,7 +1,7 @@
 stellar-sms-client
 ==================
 
-This is a demo of Stellar SMS Client.
+This is a demo of Stellar SMS Client. This project was developed during Stellar Hack Day. **Do not use in production.**
 
 ## Current functionality
 
