@@ -1,0 +1,29 @@
+{
+  "logLevel": "info",
+  "logTarget": "humanizer",
+  "db" : {
+    "client"   : "mysql",
+    "connection": {
+      "user"     : "root",
+      "database" : "stellar-sms_development"
+    }
+  },
+  "horizon": {
+    "secure": true,
+    "hostname": "horizon-testnet.stellar.org",
+    "port": 443
+  },
+  "sms": {
+    "sender": {
+      "name": "twilio",
+      "accountSID": "",
+      "authToken": "",
+      "number": ""
+    },
+    "receiver": {
+      "name": "twilio",
+      "accountSID": "",
+      "authToken": ""
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "stellar-sms-client",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "babel": "^5.4.7",
+    "bookshelf": "git+https://github.com/bartekn/bookshelf.git#master",
+    "js-stellar-lib": "git+https://github.com/stellar/js-stellar-lib.git#master",
+    "moment": "2.9.0",
+    "raw-body": "^2.1.0",
+    "stex": "git+https://github.com/stellar/stex.git#master",
+    "superagent": "^1.2.0",
+    "twilio": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.5"
+  }
+}
