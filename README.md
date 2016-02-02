@@ -7,7 +7,7 @@ This is a demo of Stellar SMS Client. This project was developed during Stellar 
 
 * Only one account working (configurable by updating app config files).
 * After [deploying the app](#testing-using-heroku-and-twilio) you can send a transaction by sending SMS to your Twilio phone numer: `send [federation name] [amount]`. For example: `send joyce 10` will send 10 STR to Joyce.
-* If you want to use your **test** account update config. You account must be funded - get some free stellars on [Galaxy](https://www.stellar.org/galaxy/).
+* If you want to use your **test** account update config. You account must be funded - get some free lumens on [Galaxy](https://www.stellar.org/galaxy/).
 
 ## Future Usage scenarios
 
